@@ -1,52 +1,28 @@
-# 2022_Winter_DA_T2
+# 2022 CUAI Winter Conference DA_T2(매의 눈) Repository
+---- 
+### 팀원
+곽수민 (응용통계학과)
+
+김우엽 (기계공학부)
 
 
-deep
-├── /data_final (원본 이미지, 만약 Augmentation을 진행하게 되면 하나 더 만들었음)
-│   ├── /train
-│   │       ├── TRAIN_00001.jpg
-│   │       ├── TRAIN_00002.jpg
-│   │       ├── TRAIN_00003.jpg
-│   │       └── ...
-│   ├── /train_labeled (제목을 TRAIN 대신에 라벨로 변경)
-│   │       ├── 머_00001.jpg
-│   │       ├── 안녕_00002.jpg
-│   │       ├── 사랑_00003.jpg
-│   │       └── ...
-│   └── /test
-│
-├── /data_transformed (원본 데이터를 convert.py를 통해 변환한 후, train test split으로 train과 valid를 임의로 나눴음. gt.txt까지 생성)
-│   ├── /training
-│   │   └── /kordata
-│   │       # TRDG2DTRB 프로젝트를 통해 변환된 한글 학습데이터
-│   │       ├── gt.txt
-│   │       └── /images
-│   │           #    image_[idx].[ext]
-│   │           ├── image_00001.png
-│   │           ├── image_00001.png
-│   │           ├── image_00001.png
-│   │           └── ...
-│   ├── /validation
-│   └── /test
-│
-├── /data_ocr (create_lmdb_dataset.py를 통해 lmdb 파일로 변환된 데이터)
-│   ├── /training
-│   │   └── /kordata
-│   │       ├── data.lmdb
-│   │       └── data.lmdb
-│   ├── /validation
-│   └── /test
-│
-├── /pretrained_model (학습시 사용할 pretrained 모델)
-│   └── korean_g2.pth
-│
-├── /saved_models
-│   # 사용자가 직접 학습한 모델이 저장되는 경로.
-│   ├── TPS-VGG-BiLSTM-CTC-Seed1111
-│   │   └── best_accuracy.pth
-│   ├── TPS-VGG-RCNN-CTC-Seed1111
-│   └── ....
-│
-├── demo.py (파일을 predict 하기 위한 파일. 원본 코드에서 character값을 수정하고, 저장되는 로그 파일의 형식을 수정함)
-│
-└── train.py (학습시 사용할 코드, 원본 코드에서 character 값을 수정)
+### 주제 요약
+
+본 연구는 브로카 실어증 환자들이 보호자 없이도 꾸준한 언어치료를 할 수 있도록 하는 것을 목적으로 대화형 언어 치료 모델을 활용한 서비스를 제안함.
+
+서비스는 낱말 이름 맞히기, 이미지 보고 체언과 용언 맞히기, 시스템과 대화 나누기의 3단계의 과정이 STT 기술과 MLM 모델을 사용해서 구성됨.
+
+-> BDU 모델 : 3단계에서 사용한 BDU라는 MLM모델은 KoElectra를 활용하여 개발됨. 이를 통해 브로카 실어증 환자가 문법형태소가 생략된 발화시 완전한 문장을 출력하여 실문법증 치료에 도움이 되도록 함.
+
+
+### Meeting Log
+날짜	내용
+22.12.26	주제 회의
+23.01.05	주제 확정, 연구 배경 및 관련 데이터셋 탐색
+23.01.09	MLM 모델 탐색
+23.01.14	모델 세부 기능 논의
+23.01.17	서비스의 프로토타입 방향 설정
+23.01.20	서비스에 필요한 각종 데이터 수집
+23.01.31	모델 파인튜닝 및 데이터 전처리
+23.02.02	코드 및 자료 정리
+23.02.04	숏페이퍼, 포스터, PPT, 대본 역할 분담 및 준비
