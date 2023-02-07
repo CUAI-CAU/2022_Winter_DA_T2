@@ -28,9 +28,7 @@
 
 ## 모델 구조
 - Transformation : TPS
-![image]([https://user-images.githubusercontent.com/99728502/217172822-3221183b-fbc5-4d96-9e15-7f14d4ebeb16.png](https://user-images.githubusercontent.com/99728502/217172693-0c9f9669-b168-4027-a818-5cf5d9441090.png))
-
-<img src="https://user-images.githubusercontent.com/99728502/217172693-0c9f9669-b168-4027-a818-5cf5d9441090.png  width="200" height="400"/>
+<img src="https://user-images.githubusercontent.com/99728502/217172693-0c9f9669-b168-4027-a818-5cf5d9441090.png"  width="200" height="400"/>
 
 irregular text를 올곧은 텍스트로 변환
 
