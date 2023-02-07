@@ -41,12 +41,12 @@ deep-text-recognition-benchmark
 │   # Augmentation 진행된 train 데이터
 │       ├── gt.txt
 │       └── /images
-│           #    image_[idx].[ext]
 │           ├── image_00001.png
 │           ├── image_00002.png
 │           ├── image_00003.png
 │           └── ...
-│   └── /valid
+│   ├── /valid
+│   └── /test
 │
 ├── /data_ocr (create_lmdb_dataset.py를 통해 lmdb 파일로 변환된 데이터)
 │   ├── /training
