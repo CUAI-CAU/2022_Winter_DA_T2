@@ -1,19 +1,19 @@
 # 2022 CUAI Winter Conference DA_T2(매의 눈) Repository
 ---
 
-👪 팀원
+## 👪 팀원
 - 곽수민 (응용통계학과)
 - 김우엽 (기계공학부)
 
 
-✍ 요약
+## ✍ 요약
 본 연구는 차세대 에듀테크 서비스의 핵심 기술로 자리 잡은 OCR 기술을 유아 손글씨 인식에 특화하여 연구하였다. 
 
 구현한 CNN 기반 모델은 Test Accuracy 85.55%의 성능을 기록하였으며 차후 교육 업계와 연동한다면 아이들의 효율적인 학습을 위한 교두보의 역할을 수행할 수 있을 것이다.
 
 
 
-✔ 회의
+## ✔ 회의
 |일자|내용|
 |------|---|
 |12/25|주제선정|
@@ -27,7 +27,7 @@
 
 
 
-💻 작업 디렉토리 구조
+## 💻 작업 디렉토리 구조
 ```python
 # 코드는 deep-text-recognition-benchmark 폴더 바로 상위 디렉토리에 존재
 deep-text-recognition-benchmark
@@ -82,3 +82,5 @@ deep-text-recognition-benchmark
 └── train.py (학습시 사용할 코드, 원본 코드에서 character 값을 수정)
 
 
+## 🏆 최종결과
+![image](https://user-images.githubusercontent.com/99728502/217172244-07419b96-7fff-47f0-a507-a9aa07c2d273.png)
