@@ -33,17 +33,17 @@
 **irregular text를 올곧은 텍스트로 변환**
 
 - Feature Extraction : **VGG**
-<img src="https://user-images.githubusercontent.com/99728502/217172822-3221183b-fbc5-4d96-9e15-7f14d4ebeb16.png"  width="700" height="300"/>
+<img src="https://user-images.githubusercontent.com/99728502/217172822-3221183b-fbc5-4d96-9e15-7f14d4ebeb16.png"  width="600" height="300"/>
 
 **글자를 인식하는 메인 모델**
 
 - Sequence Modeling : **BiLSTM**
-<img src="https://user-images.githubusercontent.com/99728502/217172924-439e0f2c-1d3f-4572-8a52-98f4d0731057.png"  width="700" height="300"/>
+<img src="https://user-images.githubusercontent.com/99728502/217172924-439e0f2c-1d3f-4572-8a52-98f4d0731057.png"  width="600" height="300"/>
 
 **인식된 이전 글자, 다음 글자 정보를 활용해 더 정확하게 예측**
 
 - Prediction : **CTC**
-<img src="https://user-images.githubusercontent.com/99728502/217173045-3a228fd7-d775-4328-aef7-57ba875d1c74.png"  width="700" height="300"/>
+<img src="https://user-images.githubusercontent.com/99728502/217173045-3a228fd7-d775-4328-aef7-57ba875d1c74.png"  width="400" height="300"/>
 
 **글자 하나를 중복된 여러개의 글자로 인식하는 것을 해결**
 
