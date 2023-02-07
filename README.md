@@ -1,5 +1,5 @@
 # 2022 CUAI Winter Conference DA_T2(매의 눈) Repository
----
+
 
 ## 👪 팀원
 - 곽수민 (응용통계학과)
@@ -80,7 +80,7 @@ deep-text-recognition-benchmark
 ├── demo.py (파일을 predict 하기 위한 파일. 원본 코드에서 character값을 수정하고, 저장되는 로그 파일의 형식을 수정함)
 │
 └── train.py (학습시 사용할 코드, 원본 코드에서 character 값을 수정)
-
+```
 
 ## 🏆 최종결과
 ![image](https://user-images.githubusercontent.com/99728502/217172244-07419b96-7fff-47f0-a507-a9aa07c2d273.png)
