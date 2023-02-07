@@ -29,15 +29,14 @@ deep-text-recognition-benchmark
 │
 ├── /data_transformed (원본 데이터를 convert.py를 통해 변환한 후, train test split으로 train과 valid를 임의로 나눴음. gt.txt까지 생성)
 │   ├── /train
-│   │   └── /kordata
-│   │       # TRDG2DTRB/convert.py 를 통해 변환된 한글 학습데이터(train/valid 나눈 후 train 데이터는 Augmentation 진행)
-│   │       ├── gt.txt
-│   │       └── /images
-│   │           #    image_[idx].[ext]
-│   │           ├── image_00001.png
-│   │           ├── image_00002.png
-│   │           ├── image_00003.png
-│   │           └── ...
+│   # TRDG2DTRB/convert.py 를 통해 변환된 한글 학습데이터(train/valid 나눈 후 train 데이터는 Augmentation 진행)
+│       ├── gt.txt
+│       └── /images
+│           #    image_[idx].[ext]
+│           ├── image_00001.png
+│           ├── image_00002.png
+│           ├── image_00003.png
+│           └── ...
 │   └── /valid
 │
 ├── /data_ocr (create_lmdb_dataset.py를 통해 lmdb 파일로 변환된 데이터)
