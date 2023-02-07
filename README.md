@@ -38,8 +38,7 @@ deep-text-recognition-benchmark
 │   │           ├── image_00002.png
 │   │           ├── image_00003.png
 │   │           └── ...
-│   ├── /validation
-│   └── /test
+│   └── /validation
 │
 ├── /data_ocr (create_lmdb_dataset.py를 통해 lmdb 파일로 변환된 데이터)
 │   ├── /training
